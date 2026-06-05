@@ -1,0 +1,23 @@
+# Python
+backend/venv/
+venv/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+backend/.env
+
+# Node
+node_modules/
+frontend/node_modules/
+
+# Builds
+dist/
+frontend/dist/
+
+# Cursor
+.cursor/
+
+# OS
+.DS_Store
