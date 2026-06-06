@@ -1,7 +1,7 @@
 # 🚀 SynkSpace Outreach Pilot
 
 AI-powered creator outreach and email campaign automation platform.
-**Live Demo:**https://outreach-pilot-inky.vercel.app/
+**Live Demo**: https://outreach-pilot-inky.vercel.app/
 
 SynkSpace Outreach Pilot helps brands manage creator databases, launch personalized email campaigns, and track outreach performance from a single dashboard.
 
