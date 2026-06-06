@@ -16,15 +16,23 @@ app = FastAPI(
 )
 
 
-# CORS setup for React frontend
+# CORS setup for React + Vercel frontend
 origins = [
-    origin.strip()
-    for origin in settings.cors_origins.split(",")
+    "http://localhost:5173",
+    "https://outreach-pilot-inky.vercel.app",
 ]
+
+# also include .env cors if available
+if settings.cors_origins:
+    origins += [
+        origin.strip()
+        for origin in settings.cors_origins.split(",")
+    ]
+
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=list(set(origins)),
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
